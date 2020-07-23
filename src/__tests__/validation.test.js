@@ -14,14 +14,14 @@ describe("string length validation", () => {
 
   it("Max length", () => {
     const validate = validation({ maxLength: 13 });
-    validate(sortString).toBe(true);
+    expect(validate(sortString)).toBe(true);
     expect(validate(medString)).toBe(true);
-    expect(validate(longString)).toBe(true);
+    expect(validate(longString)).toBe(false);
   });
 
   it("Max and min length", () => {
     const validate = validation({ minLength: 6, maxLength: 14 });
-    validate(sortString).toBe(false);
+    expect(validate(sortString)).toBe(false);
     expect(validate(medString)).toBe(true);
     expect(validate(longString)).toBe(false);
   });
