@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Button from "../../src/components/button";
+import Button from "../components/button";
 
 it("Button changes class when hovered", () => {
   const component = renderer.create(<Button />);
