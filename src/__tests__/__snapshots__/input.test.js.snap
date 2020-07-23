@@ -2,10 +2,17 @@
 
 exports[`Input render correctly 1`] = `
 <div>
-  <input
-    onChange={[Function]}
-    type="text"
-    value=""
-  />
+  <label>
+    
+    <input
+      onChange={[Function]}
+      placeholder=""
+      type="text"
+      value=""
+    />
+  </label>
+  <div>
+    
+  </div>
 </div>
 `;
