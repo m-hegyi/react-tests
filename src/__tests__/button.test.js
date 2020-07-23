@@ -9,13 +9,22 @@ it("Button changes class when hovered", () => {
   expect(tree).toMatchSnapshot();
 
   // manually trigger the callback
-  tree.props.onMouseEnter();
+  renderer.act(() => tree.props.onMouseEnter());
   // re-rendering
   tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 
-  tree.props.onMouseLeave();
+  renderer.act(() => tree.props.onMouseLeave());
   // re-rendering
   tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+it("Render the proper title", () => {
+  const component = renderer.create(<Button title="hello world" />);
+
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+

@@ -29,3 +29,13 @@ exports[`Button changes class when hovered 3`] = `
   
 </button>
 `;
+
+exports[`Render the proper title 1`] = `
+<button
+  className="btn"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
+>
+  hello world
+</button>
+`;
