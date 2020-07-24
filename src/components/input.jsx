@@ -14,7 +14,11 @@ const Input = ({
     if (validation) {
       const err = validation(val);
 
-      setError(err);
+      if (!err) {
+        setError("Error!");
+      } else {
+        setError("");
+      }
     }
 
     if (onChange) {
@@ -35,7 +39,7 @@ const Input = ({
           placeholder={placeholder}
         />
       </label>
-      <div>{error}</div>
+      {error ? <div className="error">{error}</div> : null}
     </div>
   );
 };

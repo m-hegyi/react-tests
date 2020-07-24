@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render the login form correctly 1`] = `
+<div>
+  <div>
+    <label>
+      Username
+      <input
+        onChange={[Function]}
+        placeholder="Please provide your username"
+        type="text"
+        value=""
+      />
+    </label>
+  </div>
+  <div>
+    <label>
+      Password
+      <input
+        onChange={[Function]}
+        placeholder="Please provivde your password"
+        type="text"
+        value=""
+      />
+    </label>
+  </div>
+  <button
+    className="btn"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    Login
+  </button>
+</div>
+`;

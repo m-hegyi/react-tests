@@ -11,8 +11,68 @@ exports[`Input render correctly 1`] = `
       value=""
     />
   </label>
-  <div>
+</div>
+`;
+
+exports[`Input works correctly 1`] = `
+<div>
+  <label>
     
+    <input
+      onChange={[Function]}
+      placeholder=""
+      type="text"
+      value="hello"
+    />
+  </label>
+</div>
+`;
+
+exports[`Input works correctly with validation 1`] = `
+<div>
+  <label>
+    
+    <input
+      onChange={[Function]}
+      placeholder=""
+      type="text"
+      value=""
+    />
+  </label>
+</div>
+`;
+
+exports[`Input works correctly with validation 2`] = `
+<div>
+  <label>
+    
+    <input
+      onChange={[Function]}
+      placeholder=""
+      type="text"
+      value="A"
+    />
+  </label>
+  <div
+    className="error"
+  >
+    Error!
   </div>
 </div>
 `;
+
+exports[`Input works correctly with validation 3`] = `
+<div>
+  <label>
+    
+    <input
+      onChange={[Function]}
+      placeholder=""
+      type="text"
+      value="As"
+    />
+  </label>
+</div>
+`;
+
+exports[`Input works correctly with validation 4`] = `[Function]`;
